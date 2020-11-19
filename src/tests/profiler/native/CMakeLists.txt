@@ -21,7 +21,7 @@ set(SOURCES
     dllmain.cpp
     guids.cpp)
 
-include_directories(../../../coreclr/src/pal/prebuilt/inc)
+include_directories(../../../coreclr/pal/prebuilt/inc)
 
 if(NOT WIN32)
     include_directories(../../../coreclr/src/pal/inc/rt ../../../coreclr/src/pal/inc ../../../coreclr/src/inc)
