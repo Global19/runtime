@@ -341,17 +341,17 @@ linker
 # Symbolic link for the shared portion of CoreLib to make grep/findstr work for runtime devs
 #
 # On Windows, make your own by running these commands from the repo root:
-# mklink /D src\coreclr\src\System.Private.CoreLib\shared %CD%\src\libraries\System.Private.CoreLib\src
-# mklink /D src\coreclr\src\System.Private.CoreLib\common %CD%\src\libraries\Common\src
+# mklink /D src\coreclr\System.Private.CoreLib\shared %CD%\src\libraries\System.Private.CoreLib\src
+# mklink /D src\coreclr\System.Private.CoreLib\common %CD%\src\libraries\Common\src
 #
 # On Unix, make your own by running these commands from the repo root:
-# ln -s $(pwd)/src/libraries/System.Private.CoreLib/src src/coreclr/src/System.Private.CoreLib/shared
-# ln -s $(pwd)/src/libraries/Common/src src/coreclr/src/System.Private.CoreLib/common
-src/coreclr/src/System.Private.CoreLib/shared
-src/coreclr/src/System.Private.CoreLib/common
+# ln -s $(pwd)/src/libraries/System.Private.CoreLib/src src/coreclr/System.Private.CoreLib/shared
+# ln -s $(pwd)/src/libraries/Common/src src/coreclr/System.Private.CoreLib/common
+src/coreclr/System.Private.CoreLib/shared
+src/coreclr/System.Private.CoreLib/common
 
 # The debug directory should not be ignored
-!src/coreclr/src/debug
+!src/coreclr/debug
 
 # Mono Wasm-specific excludes
 src/mono/wasm/emsdk/
