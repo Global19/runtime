@@ -292,10 +292,10 @@ prime/
 stage/
 
 # CLR prebuilt generated files
-!src/pal/prebuilt/idl/*_i.c
+!pal/prebuilt/idl/*_i.c
 
 # Valid 'debug' folder, that contains CLR debugging code
-!src/debug
+!debug
 
 # Ignore folders created by the CLR test build
 TestWrappers_x64_[d|D]ebug
@@ -330,7 +330,7 @@ cross/android-rootfs/*
 *.pyc
 
 # JIT32 files
-src/jit32
+jit32
 
 # performance testing sandbox
 sandbox
