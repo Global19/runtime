@@ -84,6 +84,9 @@ dlldata.c
 *.svclog
 *.scc
 
+# Special _.pdb under .nuget
+!src/coreclr/.nuget/_.pdb
+
 # Chutzpah Test files
 _Chutzpah*
 
